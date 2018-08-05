@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.*;
 
+@Ignore
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class LoginTest {
 	
@@ -18,7 +19,6 @@ public class LoginTest {
 	}
 	
 	@Ignore
-	
 	@Test
 	public void clicOnMenuItems() {
 	
@@ -28,8 +28,6 @@ public class LoginTest {
 		driver.findElement(By.linkText("REGISTER")).click();
 		driver.findElement(By.linkText("SUPPORT")).click();
 		driver.findElement(By.linkText("CONTACT")).click();
-
-		
 		driver.findElement(By.linkText("SIGN-ON")).click();
 		
 		driver.findElement(By.name("userName")).sendKeys("kociss");
