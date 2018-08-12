@@ -18,14 +18,14 @@ public class Init {
         URL url = null;
         
         try {
-			url = new URL("https://192.168.0.112:4444/wd/hub");           //konstruktor URL
+			url = new URL("http://192.168.0.112:4444/wd/hub");           //konstruktor URL
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}                                                         
         
 		
-		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		DesiredCapabilities cap = DesiredCapabilities.chrome();  // albo firefox
 		if (driver == null) {
 
 			//driver = new FirefoxDriver(cap);
